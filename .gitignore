@@ -22,3 +22,22 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# vitest
+lib-cov
+coverage
+!**/integrations/coverage
+.env
+.cache
+.vite-node
+ltex*
+.DS_Store
+bench/test/*/*/
+**/bench.json
+**/browser/browser.json
+docs/public/user-avatars
+docs/public/sponsors
+.eslintcache
+docs/.vitepress/cache/
+!test/cli/fixtures/dotted-files/**/.cache
+.vitest-reports
