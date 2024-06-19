@@ -1,10 +1,11 @@
-import { memo } from "react";
 import { Outlet } from "react-router-dom";
+
+import Header from "../organisms/Header";
 
 const Component = () => {
 	return (
 		<div className="App h-screen flex flex-col">
-			<header />
+			<Header />
 			<main className="flex-grow">
 				<Outlet />
 			</main>
@@ -13,4 +14,4 @@ const Component = () => {
 	);
 };
 
-export default memo(Component);
+export default Component;
