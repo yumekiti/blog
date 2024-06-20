@@ -2,10 +2,10 @@ import { List, MagnifyingGlass, X } from "@phosphor-icons/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/Logo.svg";
-import IconButton from "../atoms/IconButton";
-import SearchBox from "../atoms/SearchBox";
-import NavigationMenu from "./NavigationMenu";
+import logo from "@/assets/logo.svg";
+import IconButton from "@/components/atoms/IconButton";
+import SearchBox from "@/components/atoms/SearchBox";
+import NavigationMenu from "@/components/organisms/NavigationMenu";
 
 const Component = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);

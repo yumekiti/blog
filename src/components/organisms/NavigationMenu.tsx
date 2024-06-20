@@ -1,10 +1,9 @@
 import type { FC } from "react";
 // import useSWR from 'swr';
 
-import NavigationList from "../molecules/NavigationList";
-import TagList from "../molecules/TagList";
-
-import { categories, navigation } from "../../constants/navigation";
+import NavigationList from "@/components/molecules/NavigationList";
+import TagList from "@/components/molecules/TagList";
+import { categories, navigation } from "@/constants/navigation";
 
 const Component: FC = () => {
 	// const { data: tags } = useSWR(`/_api/tags.list`);

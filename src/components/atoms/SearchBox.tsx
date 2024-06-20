@@ -1,9 +1,9 @@
+import { MagnifyingGlass } from "@phosphor-icons/react";
 import type React from "react";
 import { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
-import { MagnifyingGlass } from "@phosphor-icons/react";
-import IconButton from "./IconButton";
+import IconButton from "@/components/atoms/IconButton";
 
 const Component: React.FC = () => {
 	const [searchParams] = useSearchParams();

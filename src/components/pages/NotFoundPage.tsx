@@ -1,5 +1,5 @@
-import notFonud from "@/assets/NotFound.svg";
-import HomeLayout from "../templates/HomeLayout";
+import notFonud from "@/assets/notfound.svg";
+import HomeLayout from "@/components/templates/HomeLayout";
 
 const Component = () => {
 	return (

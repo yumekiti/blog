@@ -1,8 +1,8 @@
+import { Tag } from "@phosphor-icons/react";
 import type { FC } from "react";
 import { Link } from "react-router-dom";
 
-import { Tag } from "@phosphor-icons/react";
-import IconTextButton from "../atoms/IconTextButton";
+import IconTextButton from "@/components/atoms/IconTextButton";
 
 type Props = {
 	tags: { name: string }[];
