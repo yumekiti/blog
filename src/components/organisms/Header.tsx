@@ -15,16 +15,20 @@ const Component = () => {
 		<header className="bg-[#fffffe] py-1 md:py-2 border-b border-[#5f6c7b]">
 			<div className="max-w-7xl mx-auto">
 				{!isSearchOpen && (
-					<div className="flex items-center justify-between">
-						<div className="flex items-center space-x-2">
-							<div className="block md:hidden">
+					<div className="px-2 flex items-center justify-between">
+						<div className="flex items-center">
+							<div className="block md:hidden mr-2 md:mr-0">
 								<IconButton
 									Icon={List}
 									aria_label="HamburgerMenuButton"
 									onClick={() => setIsMenuOpen(!isMenuOpen)}
 								/>
 							</div>
-							<Link to="/" className="cursor-pointer" aria-label="Logo">
+							<Link
+								to="/"
+								className="cursor-pointer mr-0 md:mr-2"
+								aria-label="Logo"
+							>
 								<img
 									src={logo}
 									alt="Logo"
