@@ -18,18 +18,18 @@ const Component: FC<Props> = ({ title, navigation }) => (
 	<nav className="py-2">
 		{title && <h2 className="text-[#094067] font-bold p-2">{title}</h2>}
 		<ul>
-			{navigation.map((item) => (
-				<li key={item.text} className="flex items-center">
+			{navigation.map((link) => (
+				<li key={link.text} className="flex items-center">
 					<Link
-						to={item.path}
+						to={link.path}
 						className="w-full"
-						target={item.path.includes("http") ? "_blank" : "_self"}
-						rel={item.path.includes("http") ? "noopener noreferrer" : ""}
+						target={link.path.includes("http") ? "_blank" : "_self"}
+						rel={link.path.includes("http") ? "noopener noreferrer" : ""}
 					>
 						<IconTextButton
-							Icon={item.icon}
-							text={item.text}
-							bold={item.bold}
+							Icon={link.icon}
+							text={link.text}
+							bold={link.bold}
 						/>
 					</Link>
 				</li>

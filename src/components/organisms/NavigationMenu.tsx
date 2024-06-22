@@ -3,7 +3,7 @@ import type { FC } from "react";
 
 import NavigationList from "@/components/molecules/NavigationList";
 import TagList from "@/components/molecules/TagList";
-import { categories, navigation } from "@/constants/navigation";
+import { categories, navigation } from "@/constants/links";
 
 const Component: FC = () => {
 	// const { data: tags } = useSWR(`/_api/tags.list`);

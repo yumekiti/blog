@@ -4,9 +4,12 @@ import {
 	BugBeetle,
 	ClockCounterClockwise,
 	Code,
+	GithubLogo,
 	HouseLine,
 	IdentificationCard,
+	InstagramLogo,
 	Lectern,
+	TwitterLogo,
 } from "@phosphor-icons/react";
 
 const navigation = [
@@ -31,13 +34,13 @@ const navigation = [
 	{
 		text: "ポートフォリオ",
 		icon: IdentificationCard,
-		path: "https://portfolio.yumekiti.net/",
+		path: "https://portfolio.yumekiti.net",
 		bold: true,
 	},
 	{
 		text: "ブックマーク",
 		icon: BookBookmark,
-		path: "https://bookmark.yumekiti.net/",
+		path: "https://bookmark.yumekiti.net",
 		bold: true,
 	},
 ];
@@ -60,6 +63,24 @@ const categories = [
 		icon: BugBeetle,
 		path: "/contents/other",
 		bold: false,
+	},
+];
+
+export const sns = [
+	{
+		key: "Twitter",
+		icon: TwitterLogo,
+		path: "https://twitter.com/yumekiti_social",
+	},
+	{
+		key: "Instagram",
+		icon: InstagramLogo,
+		path: "https://www.instagram.com/yumekiti_social",
+	},
+	{
+		key: "Github",
+		icon: GithubLogo,
+		path: "https://github.com/yumekiti",
 	},
 ];
 

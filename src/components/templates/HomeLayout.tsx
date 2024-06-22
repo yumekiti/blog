@@ -1,6 +1,7 @@
 import type { FC, ReactNode } from "react";
 
 import NavigationMenu from "@/components/organisms/NavigationMenu";
+import UserProfile from "@/components/organisms/UserProfile";
 
 type Props = {
 	children: ReactNode;
@@ -17,7 +18,7 @@ const Component: FC<Props> = ({ children }) => {
 					{children}
 				</div>
 				<div className="hidden lg:col-span-3 lg:block">
-					{/* <Welcome /> */}
+					<UserProfile />
 					{/* <RelatedLinks /> */}
 				</div>
 			</div>
