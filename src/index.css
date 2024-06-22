@@ -10,8 +10,7 @@
 
   color: #5f6c7b;
   background-color: #d8eefe;
-}
 
-html {
+  overflow-y: scroll;
   scroll-behavior: smooth;
 }

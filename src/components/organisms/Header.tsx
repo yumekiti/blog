@@ -12,11 +12,11 @@ const Component = () => {
 	const [isSearchOpen, setIsSearchOpen] = useState(false);
 
 	return (
-		<header className="bg-[#fffffe] p-1 md:p-2 border-b border-[#5f6c7b]">
+		<header className="bg-[#fffffe] py-1 md:py-2 border-b border-[#5f6c7b]">
 			<div className="max-w-7xl mx-auto">
 				{!isSearchOpen && (
-					<div className="px-2 flex items-center justify-between">
-						<div className="flex items-center space-x-4">
+					<div className="flex items-center justify-between">
+						<div className="flex items-center space-x-2">
 							<div className="block md:hidden">
 								<IconButton
 									Icon={List}

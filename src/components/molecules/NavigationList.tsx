@@ -20,7 +20,12 @@ const Component: FC<Props> = ({ title, navigation }) => (
 		<ul>
 			{navigation.map((item) => (
 				<li key={item.text} className="flex items-center">
-					<Link to={item.path} className="w-full">
+					<Link
+						to={item.path}
+						className="w-full"
+						target={item.path.includes("http") ? "_blank" : "_self"}
+						rel={item.path.includes("http") ? "noopener noreferrer" : ""}
+					>
 						<IconTextButton
 							Icon={item.icon}
 							text={item.text}

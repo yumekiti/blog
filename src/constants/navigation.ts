@@ -1,61 +1,64 @@
-import { Smiley } from "@phosphor-icons/react";
+import {
+	Article,
+	BookBookmark,
+	BugBeetle,
+	ClockCounterClockwise,
+	Code,
+	HouseLine,
+	IdentificationCard,
+	Lectern,
+} from "@phosphor-icons/react";
 
 const navigation = [
 	{
 		text: "ホーム",
-		icon: Smiley,
+		icon: HouseLine,
 		path: "/",
 		bold: true,
 	},
 	{
-		text: "イベント",
-		icon: Smiley,
-		path: "/events",
+		text: "記事一覧",
+		icon: Article,
+		path: "/articles",
 		bold: true,
 	},
 	{
-		text: "質問",
-		icon: Smiley,
-		path: "/questions",
+		text: "活動履歴",
+		icon: ClockCounterClockwise,
+		path: "/history",
 		bold: true,
 	},
 	{
-		text: "募集",
-		icon: Smiley,
-		path: "/requests",
+		text: "ポートフォリオ",
+		icon: IdentificationCard,
+		path: "https://portfolio.yumekiti.net/",
 		bold: true,
 	},
 	{
-		text: "部活",
-		icon: Smiley,
-		path: "/clubs",
-		bold: true,
-	},
-	{
-		text: "お問い合わせ",
-		icon: Smiley,
-		path: "/contacts",
+		text: "ブックマーク",
+		icon: BookBookmark,
+		path: "https://bookmark.yumekiti.net/",
 		bold: true,
 	},
 ];
 
 const categories = [
 	{
-		text: "IT",
-		icon: Smiley,
-		path: "/it",
+		text: "技術",
+		icon: Code,
+		path: "/contents/tech",
 		bold: false,
 	},
 	{
-		text: "Game",
-		icon: Smiley,
-		path: "/game",
+		text: "日常",
+		icon: Lectern,
+		path: "/contents/daily",
 		bold: false,
 	},
 	{
-		text: "Web",
-		icon: Smiley,
-		path: "/web",
+		text: "その他",
+		icon: BugBeetle,
+		path: "/contents/other",
 		bold: false,
 	},
 ];
