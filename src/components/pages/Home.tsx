@@ -1,9 +1,10 @@
+import PageSeparator from "@/components/atoms/PageSeparator";
 import HomeLayout from "@/components/templates/HomeLayout";
 
 const Component = () => {
 	return (
 		<HomeLayout>
-			<p>home</p>
+			<PageSeparator title="固定記事" />
 		</HomeLayout>
 	);
 };
