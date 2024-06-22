@@ -2,7 +2,7 @@ import { Star } from "@phosphor-icons/react";
 import type { FC } from "react";
 import { Link } from "react-router-dom";
 
-import { recommends } from "@/constants/recommend";
+import { recommended_articles } from "@/constants/articles";
 
 const Component: FC = () => (
 	<div className="py-2">
@@ -14,13 +14,13 @@ const Component: FC = () => (
 				</h3>
 			</div>
 			<ol className="w-3/4 mx-auto list-decimal space-y-4">
-				{recommends.map((recommend) => (
-					<li key={recommend.id}>
+				{recommended_articles.map((article) => (
+					<li key={article.id}>
 						<Link
-							to={`/contents/${recommend.id}`}
+							to={`/contents/${article.id}`}
 							className="break-all line-clamp-5 hover:text-[#3da9fc] hover:underline"
 						>
-							{recommend.title}
+							{article.title}
 						</Link>
 					</li>
 				))}
