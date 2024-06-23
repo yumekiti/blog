@@ -14,10 +14,18 @@ const Component: FC = () => (
 			<div className="w-2/3 mx-auto">
 				<p>インターネットを通じて便利を届け、生活に豊かさをお届けします。</p>
 			</div>
-			<ul className="flex justify-center gap-4">
+			<ul className="flex justify-center">
 				{sns.map((link) => (
-					<li key={link.key}>
-						<Link to={link.path} target="_blank" rel="noopener noreferrer">
+					<li
+						key={link.key}
+						className="hover:bg-[#3da9fc] hover:bg-opacity-30 rounded-[3px] p-2"
+					>
+						<Link
+							to={link.path}
+							aria-label={link.key}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<link.icon size={32} />
 						</Link>
 					</li>

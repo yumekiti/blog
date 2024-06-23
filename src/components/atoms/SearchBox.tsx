@@ -32,7 +32,7 @@ const Component: React.FC = () => {
 				Icon={MagnifyingGlass}
 				aria_label="SearchButton"
 				onClick={handleSearch}
-				className="bg-[#fffffe] group-hover:bg-[#094067] group-hover:bg-opacity-100 group-hover:text-[#fffffe]"
+				className="bg-[#fffffe] group-hover:bg-[#094067] group-hover:bg-opacity-100 group-hover:text-[#fffffe] rounded-none rounded-r-[2.8px]"
 			/>
 		</div>
 	);

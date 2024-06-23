@@ -52,7 +52,7 @@ const Component = () => {
 								className="ml-2 border border-[#005694] text-[#005694] px-4 py-2 rounded hover:bg-[#005694] hover:text-[#fffffe] hover:underline"
 								onClick={() => {}}
 							>
-								Login
+								Wiki
 							</button>
 						</div>
 					</div>
