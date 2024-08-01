@@ -16,7 +16,7 @@ const Component: FC<Props> = ({ tags }) => {
 				{tags.map((tag: { name: string }) => (
 					<li key={tag.name} className="flex items-center">
 						<Link to={`/search?q=tag%3A${tag.name}`} className="w-full">
-							<IconTextButton Icon={Tag} text={`# ${tag.name}`} />
+							<IconTextButton Icon={Tag} text={`${tag.name}`} />
 						</Link>
 					</li>
 				))}

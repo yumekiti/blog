@@ -11,7 +11,7 @@ interface Article {
 
 const Component: FC = () => {
 	const { data, error, isLoading } = useSWR(
-		"/_api/v3/page?pageId=667991551ca0a03d64a1a8f1",
+		`/_api/v3/page?pageId=${import.meta.env.VITE_RECOMMENDS_PAGE}`,
 	);
 
 	if (error) return "notfound";
@@ -45,7 +45,7 @@ const Component: FC = () => {
 					{recommended_articles.map((article: Article) => (
 						<li key={article.id}>
 							<Link
-								to={`/contents/${encodeURIComponent(article.link)}`}
+								to={`/${encodeURIComponent(article.link)}`}
 								className="break-all line-clamp-5 hover:text-[#3da9fc] hover:underline"
 							>
 								{article.title}
