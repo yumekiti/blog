@@ -1,5 +1,4 @@
 import {
-	Article,
 	BugBeetle,
 	ClockCounterClockwise,
 	Code,
@@ -7,8 +6,8 @@ import {
 	IdentificationCard,
 	InstagramLogo,
 	Lectern,
-	Onigiri,
 	ShoppingCart,
+	Tag,
 	TwitterLogo,
 } from "@phosphor-icons/react";
 
@@ -20,27 +19,9 @@ const navigation = [
 		bold: true,
 	},
 	{
-		text: "記事一覧",
-		icon: Article,
-		path: "/articles",
-		bold: true,
-	},
-	{
-		text: "買った物",
-		icon: ShoppingCart,
-		path: "/bought",
-		bold: true,
-	},
-	{
-		text: "食べ物",
-		icon: Onigiri,
-		path: "/foods",
-		bold: true,
-	},
-	{
-		text: "活動履歴",
-		icon: ClockCounterClockwise,
-		path: "/history",
+		text: "タグ一覧",
+		icon: Tag,
+		path: "/tags",
 		bold: true,
 	},
 ];
@@ -56,6 +37,18 @@ const categories = [
 		text: "日常",
 		icon: Lectern,
 		path: "/daily",
+		bold: false,
+	},
+	{
+		text: "レビュー",
+		icon: ShoppingCart,
+		path: "/review",
+		bold: false,
+	},
+	{
+		text: "活動履歴",
+		icon: ClockCounterClockwise,
+		path: "/history",
 		bold: false,
 	},
 	{
