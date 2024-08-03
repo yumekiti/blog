@@ -58,7 +58,7 @@ const Component: FC<Props> = ({ path }) => {
 					/>
 				</div>
 			))}
-			{totalCount && (
+			{totalCount !== 0 && (
 				<div className={`py-2 ${isLast && "hidden"}`}>
 					<div className="flex items-center justify-center">
 						<button

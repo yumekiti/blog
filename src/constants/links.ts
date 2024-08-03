@@ -46,7 +46,7 @@ const categories = [
 		bold: false,
 	},
 	{
-		text: "活動履歴",
+		text: "活動",
 		icon: ClockCounterClockwise,
 		path: "/history",
 		bold: false,
